@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Static HTML-CSS-JavaScript Projects</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 class="title">EXPENSE TRACKER</h1>
+    <div class="balance-container">
+      <h4 class="balance">Available balance</h4>
+      <h2 class="remaining-amount" id="remaining-amount">₹0.00</h2>
+    </div>
+
+    <div class="amount-container">
+      <div>
+        <h3 class="income">Income</h3>
+        <h4 class="income-amount" id="income-amount">₹0.00</h4>
+      </div>
+
+      <div>
+        <h3 class="expense">Expenses</h3>
+        <h4 class="expense-amount" id="expense-amount">₹0.00</h4>
+      </div>
+    </div>
+    <div class="history-section">
+      <h2>history</h2>
+      <ul class="list" id="list">
+        <li class="plus">
+          salary <span>₹300</span> <button class="delete-btn">x</button>
+        </li>
+        <li class="minus">
+          expense <span>₹200</span><button class="delete-btn">x</button>
+        </li>
+      </ul>
+      <div class="select-container">
+        <div>
+          <label for="select-type">Select Type:</label>
+          <select id="select-type">
+            <option value="">select</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <form action="#" id="form">
+      <div class="transaction-container">
+        <h2 class="amount-spent">Transaction</h2>
+        <input
+          type="text"
+          class="transaction-history"
+          id="transaction-history"
+        />
+        <h2 class="amount">Amount</h2>
+        <input type="number" class="amount" id="amount" />
+      </div>
+      <button class="add-btn">Add transaction</button>
+      <!-- <div class="transaction-history">
+        <ul id="history list">
+          <li class="transaction" id="transaction"></li>
+        </ul>
+      </div> -->
+    </form>
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
